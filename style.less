@@ -1,5 +1,5 @@
 @resp : 991px;
-@light-grey : #F5F5F5;
+@light-grey : /*#424242;*/#F5F5F5;
 
 .myflex {
     display : flex;
@@ -14,14 +14,19 @@ body {
 
     #mainContainer {
         width : 100%;
+        @media (min-width : @resp) {
+            margin-top : -4rem;
+        }
 
         h2 {
-            @media (min-width : @resp) {
-                margin-top : -2rem;
-            }
-            font-size : 2.25rem;
+            font-size : 2.5rem;
             font-weight : 100;
             text-align : center;
+            margin: 0;
+
+            &:nth-child(2) {
+                transform : rotate(180deg);
+            }
         }
 
         #content {
@@ -29,7 +34,7 @@ body {
 
             div {
                 width : 50%;
-                padding : 0 1rem;
+                padding : 1.5rem;
 
                 p {
                     margin : 0;

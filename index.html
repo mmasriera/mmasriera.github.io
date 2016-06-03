@@ -10,7 +10,8 @@
     <body class="myflex">
         <div id="mainContainer">
 
-            <h2>Miquel Masriera</h2>
+            <h2>Miquel </h2>
+            <h2>Masriera</h2>
 
             <div id="content" class="myflex">
 
@@ -33,10 +34,10 @@
 
         </div>
         <script>
-            var colors = [ "#7986CB", "#448AFF", "#4DD0E1", "#4DB6AC", "#81C784", "#FF8A65", "#8D6E63", "#78909C" ];
+            var colors = [ "#7986CB", "#448AFF", "#4DD0E1", "#4DB6AC", "#81C784", "#8D6E63", "#78909C" ];
             function setBg() {
-                var color = colors[ Math.floor( Math.random() * colors.length ) ];
-                document.body.style.background = "radial-gradient( circle, " + color + ", #F5F5F5 )";
+                var idx = Math.floor( Math.random() * colors.length );
+                document.body.style.background = "radial-gradient( circle, " + colors[idx] + ", #E0E0E0 )";
             }
             setBg();
             setInterval( setBg, 12500 );
