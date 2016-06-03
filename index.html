@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
         <title>miquel masriera</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
@@ -35,10 +35,7 @@
         </div>
         <script>
             var colors = [ "#7986CB", "#448AFF", "#4DD0E1", "#4DB6AC", "#81C784", "#8D6E63", "#78909C" ];
-            function setBg() {
-                var idx = Math.floor( Math.random() * colors.length );
-                document.body.style.background = "radial-gradient( circle, " + colors[idx] + ", #E0E0E0 )";
-            }
+            function setBg() { document.body.style.background = "radial-gradient( circle, " + colors[Math.floor( Math.random() * colors.length )] + ", #E0E0E0 )"; }
             setBg();
             setInterval( setBg, 12500 );
         </script>
