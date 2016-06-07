@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "personal page",
   "scripts": {
-    "style": "lessc --clean-css style.less style.min.css"
+    "style": "compiledCSS=$(lessc --clean-css style.less) && sed -i '' \"7s/.*/\t\t\t$compiledCSS/\" index.html"
   },
   "repository": {
     "type": "git",
