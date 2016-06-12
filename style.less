@@ -1,5 +1,5 @@
 @resp : 991px;
-@light-grey : #F5F5F5;
+@light-grey : #EEEEEE;//#F5F5F5;
 
 @font-face {
     font-family: 'Roboto Mono';
@@ -12,12 +12,40 @@
     align-items : center;
 }
 
+.overlay {
+    height: 100%;
+    width:100%;
+    top : 0;
+    left : 0;
+    position : absolute;
+    background: radial-gradient( circle, transparent, #E0E0E0 );
+    z-index:100;
+}
+
 body {
     font-family : Roboto Mono, monospace;
     font-size :  100%;
-    color : @light-grey;
     overflow : hidden;
     margin : 0;
+    color : @light-grey;
+
+
+    //backgroundugin
+    animation: backgroundColors 100s infinite;
+    -webkit-animation: backgroundColors 100s infinite;
+
+    .bgAnimation {
+        0%   { background: #81C784;}
+        17%  { background: #78909C;}
+        34%  { background: #448AFF;}
+        51%  { background: #8D6E63;}
+        68%  { background: #4DB6AC;}
+        85%  { background: #4DD0E1;}
+        100% { background: #81C784;}
+    }
+
+    @keyframes backgroundColors{ .bgAnimation }
+    @-webkit-keyframes backgroundColors { .bgAnimation }
 
     #mainContainer {
         width : 100%;
