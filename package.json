@@ -1,9 +1,9 @@
 {
   "name": "mmasriera.github.io",
   "version": "1.0.0",
-  "description": "personal page",
+  "description": "my page",
   "scripts": {
-    "style": "compiledCSS=$(lessc --clean-css style.less) && sed -i '' \"7s/.*/\t\t\t$compiledCSS/\" index.html"
+    "styles" : "compiledCSS=$(lessc --clean-css style.less) && sed -i '' \"7s/.*/\t\t\t$compiledCSS/\" index.html"
   },
   "repository": {
     "type": "git",
