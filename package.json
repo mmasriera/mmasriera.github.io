@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "my page",
   "scripts": {
-    "styles-less": "compiledCSS=$(lessc --clean-css style.less) && sed -i '' \"7s/.*/\t\t\t$compiledCSS/\" index.html",
     "styles-sass": "compiledCSS=$(node-sass --output-style compressed style.scss) && sed -i '' \"7s/.*/\t\t\t$compiledCSS/\" index.html"
   },
   "repository": {
@@ -17,8 +16,6 @@
   },
   "homepage": "https://github.com/mmasriera/mmasriera.github.io#readme",
   "devDependencies": {
-    "less": "^2.7.1",
-    "less-plugin-clean-css": "^1.5.1",
-    "node-sass": "^3.9.3"
+    "node-sass": "^4.1.1"
   }
 }
