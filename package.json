@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/mmasriera/mmasriera.github.io#readme",
   "devDependencies": {
-    "node-sass": "^4.1.1"
+    "node-sass": "^4.5.0"
   }
 }
